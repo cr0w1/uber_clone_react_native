@@ -17,13 +17,25 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.uberclone",
+      "config": {
+        "googleMapsApiKey":"AIzaSyDCXxvFFS7td8XYAs1dFjE6pJL-zzs8FpY"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.uberclone",
+      "config": {
+        "googleMaps": {
+          "apiKey":"AIzaSyDCXxvFFS7td8XYAs1dFjE6pJL-zzs8FpY"
+        },
+        "permissions":["ACCESS_COARSE_LOCATION","ACCESS_FINE_LOCATION","FOREGROUND_SERVICE"]
       }
+
     },
     "web": {
       "favicon": "./assets/favicon.png"
